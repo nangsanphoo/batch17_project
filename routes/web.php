@@ -17,3 +17,7 @@ Route::get('/', function () {
     //return view('welcome');
     return 'Hello Laravel';
 });
+
+Route::get('/testing',function(){
+	return 'This is a testing page';
+});

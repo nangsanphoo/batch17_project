@@ -20,4 +20,6 @@ Route::get('/', function () {
 });
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
 
+Route::resource('members','MemberController');
+
 

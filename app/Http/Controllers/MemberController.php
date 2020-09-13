@@ -14,7 +14,9 @@ class MemberController extends Controller
      */
     public function index()
     {
-        //
+        $members=Member::all();
+        //dd($items);
+        return view('backend.members.index',compact('members'));
     }
 
     /**
@@ -24,7 +26,7 @@ class MemberController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.members.create');
     }
 
     /**
@@ -35,7 +37,38 @@ class MemberController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            "codeno"=>'required | min:4',
+            "name"=>'required',
+            "email"=> 'required',
+            "phoneno"=>'required',
+            "photo"=>'required | mimes:jpg,png,jpeg',
+            "gender"=>'required',
+            "address"=>'required',
+            "description"=>'required'
+            
+        ]);
+
+        //If include file, upload file
+        $imageName=time().'.'.$request->photo->extension();
+
+        $request->photo->move(public_path('back/memberimg'),$imageName);
+
+        $path='back/memberimg/'.$imageName;
+        //Data insert
+        $member=new Item;
+        $member->codeno=$request->codeno;
+        $member->name=$request->name;
+        $member->email=$request->email;
+        $member->phoneno=$request->phoneno;
+        $member->photo=$path;
+        $member->gender=$request->gender;
+        $member->address=$request->address;
+        $member->description=$request->description;
+        $member->save();
+
+        //redirect
+        return redirect()->route('members.index');
     }
 
     /**

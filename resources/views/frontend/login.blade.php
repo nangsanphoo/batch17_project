@@ -16,7 +16,7 @@
 
     <div class="row justify-content-center">
       <div class="col-5">
-        <form action="login" method="POST">
+        <form action="{{route('loginpage')}}" method="POST">
          
               <div class="form-group">
                 <label class="small mb-1" for="inputEmailAddress">Email</label>
@@ -51,7 +51,7 @@
           </form>
 
           <div class=" mt-3 text-center ">
-            <a href="#" class="loginLink text-decoration-none">Need an account? Sign Up!</a>
+            <a href="{{route('registerpage')}}" class="loginLink text-decoration-none">Need an account? Sign Up!</a>
           </div>
       </div>
     </div>

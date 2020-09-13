@@ -45,23 +45,15 @@
               <div class="form-group">
                   <div class="custom-control custom-checkbox">
                     <input class="custom-control-input" id="rememberPasswordCheck" type="checkbox" />
-<<<<<<< HEAD
-                    <label class="custom-control-label" for="rememberPasswordCheck">Remember password</label>
 
-                </div>
-                  
-              
-
-=======
                     <label class="custom-control-label" for="rememberPasswordCheck">Remember password</label>&nbsp;&nbsp;&nbsp;
->>>>>>> e4d84a778162ad8dbadee5cdd24a89b04bee6923
                   <a class="small" href="#">Forgot Password?</a>
                 </div>
               </div>
 
               </div>
               </div>
-              </div>
+              
               <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
                 
                 <button type="submit" class="btn btn-secondary mainfullbtncolor btn-block">Login</button>

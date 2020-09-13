@@ -18,4 +18,10 @@ class FrontendController extends Controller
 		return view('frontend.login');
 
 	}
+	public function mainfun($value='')
+	{ 	
+		
+		return view('frontend.main');
+
+	}
 }

@@ -2,10 +2,10 @@
 @extends('frontendtemplate')
 @section('content')
 
-<div class="contact" {{-- id="sign up" --}}>
-            <div class="violet-overlay">
-                <div class="container">
-                    <h2 class="text-center">Register From</h2>
+<div class="contact">
+    <div class="violet-overlay">
+    <div class="container">
+        <h2 class="text-center">Register From</h2>
                     
     <div class="container my-5">
 
@@ -97,7 +97,7 @@
                 </form>
 
                 <div class=" mt-3 text-center ">
-                    <a href="#" class="loginLink text-decoration-none">Have an account? Go to login</a>
+                    <a href="{{route('loginpage')}}" class="loginLink text-decoration-none">Have an account? Go to login</a>
                 </div>
             </div>
         </div>

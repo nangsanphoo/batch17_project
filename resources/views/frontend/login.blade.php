@@ -20,7 +20,6 @@
             <div class="form-row">
                 <div class="col-md-6">
 
-=======
       <div class="col-5">
         <form action="{{route('loginpage')}}" method="POST">
 

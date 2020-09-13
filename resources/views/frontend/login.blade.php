@@ -19,7 +19,7 @@
       <div class="col-5">
         <form action="{{route('loginpage')}}" method="POST">
           <div class="form-row">
-               <div class="col-md-6">
+               <div class="col-md-12">
          
               <div class="form-group">
                 <label class="small mb-1" for="inputEmailAddress">Email</label>
@@ -29,7 +29,7 @@
             </div>
           </div>
             <div class="form-row">
-               <div class="col-md-6">
+               <div class="col-md-12">
               
               <div class="form-group">
                 <label class="small mb-1" for="inputPassword">Password</label>
@@ -39,19 +39,25 @@
           </div>
       </div>
             <div class="form-row">
-                <div class="col-md-6">
+                <div class="col-md-12">
 
           
               <div class="form-group">
                   <div class="custom-control custom-checkbox">
                     <input class="custom-control-input" id="rememberPasswordCheck" type="checkbox" />
+<<<<<<< HEAD
                     <label class="custom-control-label" for="rememberPasswordCheck">Remember password</label>
 
                 </div>
                   
               
 
+=======
+                    <label class="custom-control-label" for="rememberPasswordCheck">Remember password</label>&nbsp;&nbsp;&nbsp;
+>>>>>>> e4d84a778162ad8dbadee5cdd24a89b04bee6923
                   <a class="small" href="#">Forgot Password?</a>
+                </div>
+              </div>
 
               </div>
               </div>

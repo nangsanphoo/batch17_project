@@ -25,4 +25,6 @@ Route::get('main', 'FrontendController@mainfun')->name('mainpage');
 
 
 
+Route::resource('members','MemberController');
+
 

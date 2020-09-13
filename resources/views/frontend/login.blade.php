@@ -8,28 +8,25 @@
       <div class="container">
         <h1 class="text-center "> Login from</h1>
       </div>
-  </div>
- </div>
-  
-  <!-- Content -->
-  <div class="container my-5">
+      <div class="container my-5">
 
     <div class="row justify-content-center">
-      <div class="col-8">
+      {{-- <div class="col-8">
         <form action="login" method="POST">
             <div class="form-row">
-                <div class="col-md-6">
+                <div class="col-md-6"> --}}
 
       <div class="col-5">
         <form action="{{route('loginpage')}}" method="POST">
-
+          <div class="form-row">
+               <div class="col-md-6">
          
               <div class="form-group">
                 <label class="small mb-1" for="inputEmailAddress">Email</label>
                 <input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" name="email" />
                 
               </div>
-          	</div>
+            </div>
           </div>
             <div class="form-row">
                <div class="col-md-6">
@@ -73,4 +70,9 @@
     </div>
 
   </div>
+  </div>
+ </div>
+  
+  <!-- Content -->
+
 @endsection

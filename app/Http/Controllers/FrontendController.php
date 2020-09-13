@@ -24,4 +24,17 @@ class FrontendController extends Controller
 		return view('frontend.main');
 
 	}
+	public function partnerfun($value='')
+	{ 	
+		
+		return view('frontend.partner');
+
+	}
+
+	public function viewdetailfun($value='')
+	{ 	
+		
+		return view('frontend.viewdetail');
+
+	}
 }

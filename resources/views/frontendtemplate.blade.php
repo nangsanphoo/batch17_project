@@ -13,7 +13,8 @@
         
         <nav class="navbar navbar-expand-lg navbar-light text-capitalize">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="{{asset('frontend/imgs/logo.png')}}" alt="#" /></a>
+                <a class="navbar-brand" href="#"><img src="{{asset('frontend/imgs/cup66.jpg')}}" alt="#" width="80" height="60"></a>
+                <p style="color: white"><i>CUPID'S <span style="color: violet">HEART</span></i></p>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>

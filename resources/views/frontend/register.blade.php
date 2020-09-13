@@ -11,7 +11,7 @@
 
         <div class="row justify-content-center">
             <div class="col-8">
-                <form action="signin" method="POST">
+                <form action="{{route('registerpage')}}" method="POST">
                     <div class="form-row">
                         <div class="col-md-6">
                             <div class="form-group">

@@ -15,11 +15,16 @@
   <div class="container my-5">
 
     <div class="row justify-content-center">
+<<<<<<< HEAD
       <div class="col-8">
         <form action="login" method="POST">
             <div class="form-row">
                 <div class="col-md-6">
 
+=======
+      <div class="col-5">
+        <form action="{{route('loginpage')}}" method="POST">
+>>>>>>> 4bac5f99a6ff66b3204d4ca2ff99074003c47556
          
               <div class="form-group">
                 <label class="small mb-1" for="inputEmailAddress">Email</label>

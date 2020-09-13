@@ -21,6 +21,8 @@ Route::get('/', function () {
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
 Route::get('register', 'FrontendController@registerfun')->name('registerpage');
 Route::get('login', 'FrontendController@loginfun')->name('loginpage');
+Route::get('main', 'FrontendController@mainfun')->name('mainpage');
+
 
 
 

@@ -48,11 +48,12 @@
                     <label class="custom-control-label" for="rememberPasswordCheck">Remember password</label>
 
                 </div>
-                  </div>
+                  
               
 
                   <a class="small" href="#">Forgot Password?</a>
 
+              </div>
               </div>
               </div>
               <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">

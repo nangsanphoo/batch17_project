@@ -28,4 +28,6 @@ Route::get('viewdetail', 'FrontendController@viewdetailfun')->name('viewdetailpa
 
 
 
+Route::resource('members','MemberController');
+
 

@@ -25,6 +25,7 @@ Route::get('/', 'FrontendController@mainfun')->name('mainpage');
 Route::get('partner', 'FrontendController@partnerfun')->name('partnerpage');
 Route::get('viewdetail', 'FrontendController@viewdetailfun')->name('viewdetailpage');
 
+Route::get('contact', 'FrontendController@contactfun')->name('contactpage');
 
 
 

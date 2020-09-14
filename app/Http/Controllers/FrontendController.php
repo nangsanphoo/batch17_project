@@ -37,4 +37,11 @@ class FrontendController extends Controller
 		return view('frontend.viewdetail');
 
 	}
+	public function contactfun($value='')
+	{ 	
+		
+		return view('frontend.contact');
+
+	}
 }
+

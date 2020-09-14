@@ -13,15 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-    //return 'Hello Laravel';
+// Route::get('/', function () {
+//     return view('welcome');
+//     //return 'Hello Laravel';
 
-});
+// });
 Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
 Route::get('register', 'FrontendController@registerfun')->name('registerpage');
 Route::get('login', 'FrontendController@loginfun')->name('loginpage');
-Route::get('main', 'FrontendController@mainfun')->name('mainpage');
+Route::get('/', 'FrontendController@mainfun')->name('mainpage');
 Route::get('partner', 'FrontendController@partnerfun')->name('partnerpage');
 Route::get('viewdetail', 'FrontendController@viewdetailfun')->name('viewdetailpage');
 

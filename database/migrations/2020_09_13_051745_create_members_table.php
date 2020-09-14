@@ -20,7 +20,7 @@ class CreateMembersTable extends Migration
             $table->string('email');
             $table->integer('phoneno');
             $table->text('photo');
-            $table->string('gender_name');
+            $table->string('gender');
             $table->string('address');
             $table->text('description');
             

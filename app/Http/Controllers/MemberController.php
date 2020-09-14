@@ -61,8 +61,8 @@ class MemberController extends Controller
         $member->name=$request->name;
         $member->email=$request->email;
         $member->phoneno=$request->phoneno;
-        $member->photo=$request->photo;
-        $member->gender=$request->gender_name;
+        $member->photo=$path;
+        $member->gender=$request->gender;
         $member->address=$request->address;
         $member->description=$request->description;
         $member->save();

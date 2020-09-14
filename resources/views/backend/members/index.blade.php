@@ -29,7 +29,7 @@
 	          				<td>{{$i++}}</td>
 	          				<td>{{$member->codeno}}</td>
 	          				<td>{{$member->name}} </td>
-	          				<td>{{$member->photo}} </td>
+	          				<td><img src="{{$member->photo}}" class="img-fluid w-25"> </td>
 	          				<td>
 	          					<a href="{{route('members.show',$member->id)}}" class="btn btn-primary">Detail</a>
 	          					<a href="{{route('members.edit',$member->id)}}" class="btn btn-warning">Edit</a>

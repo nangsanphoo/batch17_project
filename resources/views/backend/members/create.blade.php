@@ -61,17 +61,47 @@
 		<div class="form-group row">
 		    <label class="col-sm-2">Gender</label>
 		    <div class="col-sm-5">
-		      	<input type="radio" name="gender">
+		      	<input type="radio" name="gender" value="Male">
 		      	<label>Male</label>&nbsp;
-		      	<input type="radio" name="gender">
+		      	<input type="radio" name="gender" value="Female">
 		      	<label>Female</label>
+		      	@error('gender')
+		      	<div class="text-danger">{{$message}}</div>
+		      	@enderror
+		    </div>
+		</div>
+		<div class="form-group row">
+		    <label class="col-sm-2">Age</label>
+		    <div class="col-sm-5">
+		      	<input type="text" class="form-control" name="age">
+		      	@error('age')
+		      	<div class="text-danger">{{$message}}</div>
+		      	@enderror
+		    </div>
+		</div>
+		<div class="form-group row">
+		    <label class="col-sm-2">Hair Style</label>
+		    <div class="col-sm-5">
+		      	<input type="text" class="form-control" name="hair_style">
+		      	@error('hair_style')
+		      	<div class="text-danger">{{$message}}</div>
+		      	@enderror
+		    </div>
+		</div>
+		<div class="form-group row">
+		    <label class="col-sm-2">Hobbies</label>
+		    <div class="col-sm-5">
+		      	<textarea name="hobbies" class="form-control"></textarea>
+		      	@error('hobbies')
+		      	<div class="text-danger">{{$message}}</div>
+		      	@enderror
 		    </div>
 		</div>
 		<div class="form-group row">
 		    <label class="col-sm-2">Address</label>
 		    <div class="col-sm-5">
 		      	<textarea name="address" class="form-control"></textarea>
-		      	@error('description')
+		      	@error('address')
 		      	<div class="text-danger">{{$message}}</div>
 		      	@enderror
 		    </div>

@@ -61,9 +61,9 @@
 		<div class="form-group row">
 		    <label class="col-sm-2">Gender</label>
 		    <div class="col-sm-5">
-		      	<input type="radio" name="gender" checked="checked">
+		      	<input type="radio" name="gender_name" >
 		      	<label>Male</label>&nbsp;
-		      	<input type="radio" name="gender">
+		      	<input type="radio" name="gender_name">
 		      	<label>Female</label>
 		    </div>
 		</div>

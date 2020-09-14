@@ -33,7 +33,11 @@
 		<div class="form-group row">
 		    <label class="col-sm-2">Email</label>
 		    <div class="col-sm-5">
+<<<<<<< HEAD
+		      	<input type="email" class="form-control" name="email">
+=======
 		      	<input type="text" class="form-control" name="email">
+>>>>>>> 91d17743600d7fca7980aa6b31c931fae9d55899
 		      	@error('email')
 		      	<div class="text-danger">{{$message}}</div>
 		      	@enderror
@@ -42,7 +46,11 @@
 		<div class="form-group row">
 		    <label class="col-sm-2">Phone No.</label>
 		    <div class="col-sm-5">
+<<<<<<< HEAD
+		      	<input type="number" class="form-control" name="phoneno">
+=======
 		      	<input type="text" class="form-control" name="phoneno">
+>>>>>>> 91d17743600d7fca7980aa6b31c931fae9d55899
 		      	@error('phoneno')
 		      	<div class="text-danger">{{$message}}</div>
 		      	@enderror

@@ -22,7 +22,7 @@
                <div class="col-md-12">
          
               <div class="form-group">
-                <label class="small mb-1" for="inputEmailAddress">Email</label>
+                <label class="small mb-1" for="inputEmailAddress" style="font-size:20px">Email</label>
                 <input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" name="email" />
                 
               </div>
@@ -32,7 +32,7 @@
                <div class="col-md-12">
               
               <div class="form-group">
-                <label class="small mb-1" for="inputPassword">Password</label>
+                <label class="small mb-1" for="inputPassword" style="font-size:20px">Password</label>
                 <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" name="password" />
                 
               </div>

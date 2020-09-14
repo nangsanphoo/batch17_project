@@ -56,7 +56,7 @@ class MemberController extends Controller
 
         $path='back/memberimg/'.$imageName;
         //Data insert
-        $member=new Item;
+        $member=new Member;
         $member->codeno=$request->codeno;
         $member->name=$request->name;
         $member->email=$request->email;

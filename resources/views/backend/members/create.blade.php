@@ -33,7 +33,7 @@
 		<div class="form-group row">
 		    <label class="col-sm-2">Email</label>
 		    <div class="col-sm-5">
-		      	<input type="text" class="form-control" name="name">
+		      	<input type="email" class="form-control" name="email">
 		      	@error('email')
 		      	<div class="text-danger">{{$message}}</div>
 		      	@enderror
@@ -42,7 +42,7 @@
 		<div class="form-group row">
 		    <label class="col-sm-2">Phone No.</label>
 		    <div class="col-sm-5">
-		      	<input type="text" class="form-control" name="name">
+		      	<input type="number" class="form-control" name="phoneno">
 		      	@error('phoneno')
 		      	<div class="text-danger">{{$message}}</div>
 		      	@enderror

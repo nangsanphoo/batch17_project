@@ -44,7 +44,7 @@
                   </div>
                 </div>
               </div>
-              <div class="form-row">
+             {{--  <div class="form-row">
 
                 <div class="col-md-8">
 
@@ -54,7 +54,7 @@
 
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <div class="form-row">
                 <div class="col-md-8 ">
                   <div class="form-group" style="font-size:25px">
@@ -64,7 +64,7 @@
                 </div>
               </div>
 
-              <div class="form-row">
+             {{--  <div class="form-row">
 
                 <div class="col-md-8">
                   <div class="form-group" style="font-size:25px">
@@ -85,7 +85,7 @@
 
                   </div>
                 </div>
-              </div>
+              </div> --}}
 
               <div class="col-md-8">
 

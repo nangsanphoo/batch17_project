@@ -24,6 +24,11 @@
               <div class="form-group">
                 <label class="small mb-1" for="inputEmailAddress" style="font-size:20px">Email</label>
                 <input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" name="email" />
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
                 
               </div>
             </div>
@@ -34,6 +39,11 @@
               <div class="form-group">
                 <label class="small mb-1" for="inputPassword" style="font-size:20px">Password</label>
                 <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" name="password" />
+                @error('password')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
                 
               </div>
           </div>

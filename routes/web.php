@@ -30,12 +30,14 @@ Route::get('profile', 'FrontendController@profilefun')->name('profilepage');
 
 
 
-Route::resource('members','MemberController');
+
 
 Route::middleware('role:Admin')->group(function () {
 
 	Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
-	
+
+	Route::resource('members','MemberController');
+
 });
 
 

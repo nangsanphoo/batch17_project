@@ -24,12 +24,32 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="{{route('mainpage')}}">Home <span class="sr-only">(current)</span></a>
                         </li>
+                        @role('Customer')
+            <span classs="float-right d-xl-block d-lg-block d-md-block d-none">
+              <a id="navbarDropdown" class="nav-link dropdown-toggle loginLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                  {{ Auth::user()->name }}
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="{{ route('logout') }}"
+                     onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                      {{ __('Logout') }}
+                  </a>
+
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                      @csrf
+                  </form>
+              </div>
+            </span>
+            @else
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('loginpage')}}">Login</a>
+                            <a class="nav-link" href="{{-- {{route('loginpage')}} --}}">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
+                            <a class="nav-link" href="{{-- {{route('registerpage')}} --}}">sign up</a>
                         </li>
+                        @endrole
                         
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('contactpage')}}">contact us</a>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Role;
 
 class RoleTableSeeder extends Seeder
 {
@@ -12,7 +13,7 @@ class RoleTableSeeder extends Seeder
     public function run()
     {
       $role1 = new Role;
-      $role1->name = "User";
+      $role1->name = "Customer";
       $role1->save();
 
       $role2 = new Role;

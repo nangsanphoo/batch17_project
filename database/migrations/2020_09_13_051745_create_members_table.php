@@ -17,7 +17,7 @@ class CreateMembersTable extends Migration
             $table->id();
             $table->string('codeno');
             $table->string('name');
-            $table->string('email');
+            $table->string('email')->unique();
             $table->integer('phoneno');
             $table->text('photo');
             $table->string('gender');

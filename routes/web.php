@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Route;
 //     //return 'Hello Laravel';
 
 // });
-Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
+
 Route::get('register', 'FrontendController@registerfun')->name('registerpage');
 Route::get('login', 'FrontendController@loginfun')->name('loginpage');
 Route::get('/', 'FrontendController@mainfun')->name('mainpage');
@@ -31,4 +31,14 @@ Route::get('contact', 'FrontendController@contactfun')->name('contactpage');
 
 Route::resource('members','MemberController');
 
+Route::middleware('role:Admin')->group(function () {
 
+	Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
+	
+});
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

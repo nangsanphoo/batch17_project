@@ -67,6 +67,19 @@
                         </div>
                     </div>
                 </div>
+
+                 <div class="form-row">
+
+                <div class="col-md-8">
+
+                  <div class="form-group" style="font-size:25px">
+                    <label class="small mb-1" for="Date"> Birthday*</label>
+                    <input class="form-control py-4" id="Date" type="Date" placeholder="Enter Month" name="Date" />
+
+                  </div>
+                </div>
+              </div>
+              
                 <div class="form-row">
 
                     <div class="col-md-10">

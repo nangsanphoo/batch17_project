@@ -43,5 +43,11 @@ class FrontendController extends Controller
 		return view('frontend.contact');
 
 	}
+	public function profilefun($value='')
+	{ 	
+		
+		return view('frontend.profile');
+
+	}
 }
 

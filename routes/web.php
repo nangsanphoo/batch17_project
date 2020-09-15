@@ -26,6 +26,7 @@ Route::get('partner', 'FrontendController@partnerfun')->name('partnerpage');
 Route::get('viewdetail', 'FrontendController@viewdetailfun')->name('viewdetailpage');
 
 Route::get('contact', 'FrontendController@contactfun')->name('contactpage');
+Route::get('profile', 'FrontendController@profilefun')->name('profilepage');
 
 
 
@@ -40,5 +41,7 @@ Route::middleware('role:Admin')->group(function () {
 
 
 Auth::routes();
+Route::get('loginform','PageController@loginfun')->name('loginpage');
+Route::get('registerform','PageController@registerfun')->name('registerpage');
 
 Route::get('/home', 'HomeController@index')->name('home');

@@ -29,12 +29,14 @@ Route::get('contact', 'FrontendController@contactfun')->name('contactpage');
 
 
 
-Route::resource('members','MemberController');
+
 
 Route::middleware('role:Admin')->group(function () {
 
 	Route::get('dashboard', 'BackendController@dashboardfun')->name('dashboardpage');
-	
+
+	Route::resource('members','MemberController');
+
 });
 
 

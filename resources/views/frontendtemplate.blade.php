@@ -30,11 +30,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" href="#agency">travel agency</a>
-                        </li> -->
+                        
                         <li class="nav-item">
-                            <a class="nav-link" href="#">contact us</a>
+                            <a class="nav-link" href="{{route('contactpage')}}">contact us</a>
                         </li>
                         <!-- <li class="nav-item .search-container">
                             <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>

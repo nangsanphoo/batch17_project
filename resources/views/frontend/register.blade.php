@@ -11,13 +11,13 @@
 
                 <div class="row justify-content-center">
                     <div class="col-8">
-                        <form action="{{route('registerpage')}}" method="POST">
+                        <form action="{{route('register')}}" method="POST" enctype="multipart/form-data">
+                            @csrf
                             <div class="form-row">
                                 <div class="col-md-10">
                                     <div class="form-group" style="font-size:25px">
                                       <label class="small mb-1" for="inputName"> Username*</label>
-                                      <input class="form-control py-4" id="inputName" type="text" 
-                                      name="name" />
+                                      <input class="form-control py-4" id="inputName" type="text" name="name" />
                                   </div>
                               </div>
                           </div>
@@ -48,8 +48,8 @@
                         <div class="col-md-10">
                             <div class="form-group" style="font-size:25px">
                               <label class="small mb-1" for="inputConfirmPassword">Confirm Password*</label>
-                              <input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirm password" />
-                              <font id="cerror" color="red"></font>
+                              <input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirm password" name = "password_confirmation"/>
+                              <font id="error" color="red"></font>
 
                           </div>
                       </div>

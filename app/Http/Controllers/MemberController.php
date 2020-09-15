@@ -44,6 +44,9 @@ class MemberController extends Controller
             "phoneno"=>'required',
             "photo"=>'required | mimes:jpg,png,jpeg',
             "gender"=>'required',
+            "age"=>'required',
+            "hair_style"=>'required',
+            "hobbies"=>'required',
             "address"=>'required',
             "description"=>'required'
             
@@ -63,6 +66,9 @@ class MemberController extends Controller
         $member->phoneno=$request->phoneno;
         $member->photo=$path;
         $member->gender=$request->gender;
+        $member->age=$request->age;
+        $member->hair_style=$request->hair_style;
+        $member->hobbies=$request->hobbies;
         $member->address=$request->address;
         $member->description=$request->description;
         $member->save();
@@ -79,8 +85,9 @@ class MemberController extends Controller
      */
     public function show(Member $member)
     {
-        //
+        return view('backend.members.detail',compact('member'));
     }
+    
 
     /**
      * Show the form for editing the specified resource.
@@ -90,7 +97,7 @@ class MemberController extends Controller
      */
     public function edit(Member $member)
     {
-        //
+        return view('backend.members.edit',compact('member'));
     }
 
     /**
@@ -102,7 +109,51 @@ class MemberController extends Controller
      */
     public function update(Request $request, Member $member)
     {
-        //
+        //validation
+        $request->validate([
+            "codeno"=>'required | min:4',
+            "name"=>'required',
+            "email"=> 'required',
+            "phoneno"=>'required',
+            "photo"=>'sometimes',
+            "oldphoto"=>'required',
+            "gender"=>'required',
+            "age"=>'required',
+            "hair_style"=>'required',
+            "hobbies"=>'required',
+            "address"=>'required',
+            "description"=>'required'
+        ]);
+
+        //file upload, if data
+        if ($request->hasFile('photo')){
+            $imageName=time().'.'.$request->photo->extension();
+
+            $request->photo->move(public_path('back/memberimg'),$imageName);
+
+            $path='back/memberimg/'.$imageName;
+
+        }else{
+            $path=$request->oldphoto;
+        }
+
+        //data update
+        $member=new Member;
+        $member->codeno=$request->codeno;
+        $member->name=$request->name;
+        $member->email=$request->email;
+        $member->phoneno=$request->phoneno;
+        $member->photo=$path;
+        $member->gender=$request->gender;
+        $member->age=$request->age;
+        $member->hair_style=$request->hair_style;
+        $member->hobbies=$request->hobbies;
+        $member->address=$request->address;
+        $member->description=$request->description;
+        $member->save();
+
+        //redirect
+        return redirect()->route('members.index');
     }
 
     /**
@@ -113,6 +164,7 @@ class MemberController extends Controller
      */
     public function destroy(Member $member)
     {
-        //
+        $member->delete();
+        return redirect()->route('members.index');
     }
 }

@@ -12,9 +12,41 @@
                 <div class="row justify-content-center">
                     <div class="col-8">
                         <form action="{{route('partnerpage')}}" method="POST" >
+                          <div class="form-row">
+
+                <div class="col-md-8">
+
+                    <div class="form-group" style="font-size:25px">
+                        <label class="small mb-1" for="gender"> I'm a*</label>
+                              <select class="form-control " id="gender" name="gender" placeholder="Select Gender">
+                                  <option value="gender" >Select Gender</option>
+
+                                  <option value="Male">Male</option>
+                                  <option value="female">Female</option>
+
+                              </select>
+                    </div>
+                </div>
+                </div>
+                <div class="form-row">
+
+                <div class="col-md-8">
+
+                    <div class="form-group"style="font-size:25px">
+                        <label class="small mb-1" for="gender"> Seeking a*</label>
+                              <select class="form-control " id="gender" name="gender" placeholder="Select Gender">
+                                  <option value="gender" >Select Gender</option>
+
+                                  <option value="Male">Male</option>
+                                  <option value="female">Female</option>
+
+                              </select>
+                    </div>
+                </div>
+                </div>
                             <div class="form-row">
-                                <div class="col-md-6 ">
-                                    <div class="form-group">
+                                <div class="col-md-8 ">
+                                    <div class="form-group" style="font-size:25px">
                                       <label class="small mb-1" for="inputAge"> Age:</label>
                                       <input class="form-control py-4" id="inputAge" type="text" placeholder="Enter Age" name="age" />
                                   </div>
@@ -23,8 +55,8 @@
 
                           <div class="form-row">
 
-                            <div class="col-md-6">
-                                <div class="form-group">
+                            <div class="col-md-8">
+                                <div class="form-group" style="font-size:25px">
                                   <label class="small mb-1" for="inputPassword">Hair Style:</label>
                                   <input class="form-control py-4" id="inputStyle" type="password" placeholder="Enter Hair Style:" name="style" />
                                   <font id="error" color="red"></font>
@@ -34,19 +66,19 @@
                       </div>
                       <div class="form-row">
                         
-                        <div class="col-md-6">
-                            <div class="form-group">
+                        <div class="col-md-8">
+                            <div class="form-group" style="font-size:25px">
                               <label class="small mb-1" for="inputConfirmPassword">Hobby:</label>
                               <input class="form-control py-4" id="inputHobby" type="text" placeholder="Enter Hobby" />
-                              <font id="cerror" color="red"></font>
+                              <font id="error" color="red"></font>
 
                           </div>
                       </div>
                   </div>
                   
-                  <div class="col-md-6">
+                  <div class="col-md-8">
                       
-                    <a href="{{route('viewdetailpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Next</a>
+                    <a href="#" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Next</a>
                 </div>
                 
             </div>

@@ -21,6 +21,9 @@ class CreateMembersTable extends Migration
             $table->integer('phoneno');
             $table->text('photo');
             $table->string('gender');
+            $table->integer('age');
+            $table->string('hair_style');
+            $table->string('hobbies');
             $table->string('address');
             $table->text('description');
             

@@ -16,35 +16,32 @@
                 <div class="col-12">
                   <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
                     <div class="MultiCarousel-inner">
-                      {{-- @foreach($items as $item)
-                      <div class="item">
+                      {{-- @foreach($members as $member)
+                      <div class="member">
                         <a href="{{route('itempage',$item->id)}}">
                           <div class="pad15">
-                            <img src="{{asset($item->photo)}}" class="img-fluid">
-                            <p class="text-truncate">{{$item->name}}</p>
-                            <p class="item-price">
-                              <strike>250,000 Ks </strike> 
-                              <span class="d-block">{{$item->price}} Ks</span>
-                            </p> --}}
+                            <img src="{{asset($member->photo)}}" class="img-fluid">
+                            <p class="text-truncate">{{$member->name}}</p>
+                           
 
 
-                            <a href="{{route('viewdetailpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; ">View</a>
-{{-- 
-              </div>
-            </a>
+                            <a href="{{route('viewdetailpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; " >View</a>
+
+                          </div>
+                        </a>
+                      </div>
+                      @endforeach  --}}
+                    </div>
+                  </div>
+                </div>
+              </div>                         
+            </form>
+
           </div>
-          @endforeach --}}
         </div>
       </div>
     </div>
-  </div>                         
-</form>
-
-</div>
-</div>
-</div>
-</div>
-</div>
+  </div>
 </div>
 
 @endsection

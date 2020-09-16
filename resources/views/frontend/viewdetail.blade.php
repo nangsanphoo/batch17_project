@@ -18,26 +18,26 @@
                 <img src="#" style="width: 300px; height: 400px" class="img-fluid">
               </td>
 
-              <td>Name :  
+              <td>Name :  {{-- {{$member->name}} --}}
               </td>
             </tr>
 
             <tr>
               <td>
-               Gender : 
+               Gender : {{-- {{$member->gender}} --}}
              </td>
            </tr>
 
            <tr>
             <td>
-             Age : 
+             Age : {{-- {{$member->age}}  --}}
            </td>
          </tr>
 
 
          <tr>
           <td>
-           Description : 
+           Description : {{-- {{$member->description}} --}}
          </td>
        </tr>
 
@@ -48,7 +48,7 @@
  </div>
 
  <div class="text-left">
-   <a href="#" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
+   <a href="{{route('profilepage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
    <a href="#" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Join</a>
  </div>
 

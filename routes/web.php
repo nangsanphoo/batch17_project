@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/registerpage', 'FrontendController@registerfun')->name('registerpage');
-Route::get('loginpage', 'FrontendController@loginfun')->name('loginpage');
+Route::get('/loginpage', 'FrontendController@loginfun')->name('loginpage');
 Route::get('/', 'FrontendController@mainfun')->name('mainpage');
 Route::get('/partner', 'FrontendController@partnerfun')->name('partnerpage');
 Route::get('viewdetail/{id}', 'FrontendController@viewdetailfun')->name('viewdetailpage');

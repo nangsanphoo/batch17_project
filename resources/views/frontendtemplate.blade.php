@@ -32,7 +32,7 @@
               </a>
 
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="{{ route('logout') }}"
+                  <a class="dropdown-item btn_logout" href="{{ route('logout') }}"
                      onclick="event.preventDefault();
                                    document.getElementById('logout-form').submit();">
                       {{ __('Logout') }}
@@ -44,8 +44,6 @@
               </div>
             </span>
             @else
-        
-
                             <a class="nav-link" href="{{route('loginpage')}}">Login</a>
                             <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
                         @endrole

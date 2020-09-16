@@ -68,10 +68,30 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'address' => $data['address'],
+
         ]);
 
         $user->assignRole('Customer');
 
         return $user;
+    }
+
+    protected function redirectTo()
+    {
+        $roles = auth()->user()->getRoleNames();
+
+        // Check user role
+        switch ($roles[0]) {
+            case 'Admin':
+                    return 'dashboard';
+                break;
+            case 'Customer':
+                    return 'partner';
+                break; 
+            default:
+                    return '/';  
+                break;
+        }
     }
 }

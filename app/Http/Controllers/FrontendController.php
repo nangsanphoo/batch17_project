@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Member;
 
 class FrontendController extends Controller
 {
@@ -26,6 +27,8 @@ class FrontendController extends Controller
 	}
 	public function partnerfun($value='')
 	{ 	
+        $members=Member::all();
+
 		
 		return view('frontend.partner');
 

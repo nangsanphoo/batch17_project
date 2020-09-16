@@ -30,7 +30,7 @@ Route::get('viewdetail/{id}', 'FrontendController@viewdetailfun')->name('viewdet
 
 Route::get('/contact', 'FrontendController@contactfun')->name('contactpage');
 
-Route::get('profile', 'FrontendController@profilefun')->name('profilepage');
+Route::post('profile', 'FrontendController@profilefun')->name('profilepage');
 
 
 
@@ -44,7 +44,6 @@ Route::middleware('role:Admin')->group(function () {
 	Route::resource('members','MemberController');
 
 });
-
 
 
 Auth::routes();

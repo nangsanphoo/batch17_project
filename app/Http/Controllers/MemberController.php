@@ -138,7 +138,7 @@ class MemberController extends Controller
         }
 
         //data update
-        $member=new Member;
+        
         $member->codeno=$request->codeno;
         $member->name=$request->name;
         $member->email=$request->email;

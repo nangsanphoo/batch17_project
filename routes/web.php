@@ -19,14 +19,18 @@ use Illuminate\Support\Facades\Route;
 
 // });
 
-Route::get('register', 'FrontendController@registerfun')->name('registerpage');
-Route::get('login', 'FrontendController@loginfun')->name('loginpage');
+Route::get('/registerpage', 'FrontendController@registerfun')->name('registerpage');
+Route::get('/loginpage', 'FrontendController@loginfun')->name('loginpage');
 Route::get('/', 'FrontendController@mainfun')->name('mainpage');
-Route::get('partner', 'FrontendController@partnerfun')->name('partnerpage');
-Route::get('viewdetail', 'FrontendController@viewdetailfun')->name('viewdetailpage');
+Route::get('/partner', 'FrontendController@partnerfun')->name('partnerpage');
+Route::get('/viewdetail', 'FrontendController@viewdetailfun')->name('viewdetailpage');
 
+<<<<<<< HEAD
+Route::get('/contact', 'FrontendController@contactfun')->name('contactpage');
+=======
 Route::get('contact', 'FrontendController@contactfun')->name('contactpage');
 Route::get('profile', 'FrontendController@profilefun')->name('profilepage');
+>>>>>>> f1e3e3fc112d9b45fb378c4345c02ea76c420336
 
 
 
@@ -47,3 +51,4 @@ Route::get('loginform','PageController@loginfun')->name('loginpage');
 Route::get('registerform','PageController@registerfun')->name('registerpage');
 
 Route::get('/home', 'HomeController@index')->name('home');
+

@@ -60,7 +60,7 @@
 
                 <div class="row justify-content-center">
                     <div class="col-8">
-                        <form action="{{route('register')}}" method="POST" enctype="multipart/form-data">
+                        <form action="{{route('registerpage')}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-row">
                                 <div class="col-md-10">

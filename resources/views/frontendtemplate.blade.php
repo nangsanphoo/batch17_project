@@ -44,17 +44,10 @@
               </div>
             </span>
             @else
-<<<<<<< HEAD
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('loginpage')}}">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
-                        </li>
-=======
+        
+
                             <a class="nav-link" href="{{route('loginpage')}}">Login</a>
                             <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
->>>>>>> 543cc11ef4478a7a2df8e936dafd3f69f7ef0835
                         @endrole
                         
                             <a class="nav-link" href="{{route('contactpage')}}">contact us</a>

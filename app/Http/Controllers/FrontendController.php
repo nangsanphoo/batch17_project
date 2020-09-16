@@ -27,12 +27,6 @@ class FrontendController extends Controller
 	}
 	public function partnerfun($value='')
 	{ 	
-<<<<<<< HEAD
-        $members=Member::all();
-
-		
-=======
->>>>>>> e4f8834ee1087501bdbdbbdf70d51d9e0c4dd2ac
 		return view('frontend.partner');
 
 	}

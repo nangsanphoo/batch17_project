@@ -3,8 +3,7 @@
 @section('content')
 
 <div class="contact" {{-- id="sign up" --}}>
-<<<<<<< HEAD
-  <div class="violet-overlay">
+ {{--  <div class="violet-overlay">
     <div class="container">
       <h2 class="text-center">Register From</h2>
 
@@ -52,7 +51,7 @@
                     <input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirm password" name="confirmpassword"/>
                     <font id="cerror" color="red"></font>
 
-=======
+======= --}}
     <div class="violet-overlay">
         <div class="container">
             <h2 class="text-center">Register From</h2>
@@ -103,10 +102,8 @@
 
                           </div>
                       </div>
->>>>>>> 41fc2b8ad86f9d4d641a6ced01149a1da39592c6
                   </div>
-                </div>
-              </div>
+                
 
 
 
@@ -123,16 +120,16 @@
 
               <div class="form-row">
 
-                <div class="col-md-8">
+                <div class="col-md-10">
 
                   <div class="form-group" style="font-size:25px">
                     <label class="small mb-1" for="Date"> Birthday*</label>
-                    <input class="form-control py-4" id="date" type="Date" placeholder="Enter Month" name="birthday" />
+                    <input class="form-control py-4" id="date" type="Date" placeholder="Enter Month" name="Date" />
 
                   </div>
                 </div>
-              </div>/
-              <div class="form-group" style="font-size:25px">
+              </div>
+              {{-- <div class="form-group" style="font-size:25px">
                 <label class="small mb-1" for="gender"> I'm a*</label>
                 <select class="form-control " id="gender" name="gender" placeholder="Select Gender">
                   <option value="gender" >Select Gender</option>
@@ -142,7 +139,7 @@
 
                 </select>
               </div>
-            </div>
+            </div> --}}
 
             <div class="form-row">
 

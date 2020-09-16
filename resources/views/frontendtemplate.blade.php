@@ -44,10 +44,10 @@
             </span>
             @else
                         <li class="nav-item">
-                            <a class="nav-link" href="{{-- {{route('loginpage')}} --}}">Login</a>
+                            <a class="nav-link" href="{{route('loginpage')}}">Login</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{-- {{route('registerpage')}} --}}">sign up</a>
+                            <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
                         </li>
                         @endrole
                         

@@ -7,7 +7,8 @@
                     <div>
                         <h1><span>Dating Site</span><br>Sign up now and meet someone!</h1>
                         <p>Welcome to Datenow,if you join you will meet someone.We're one of the biggest dating company.</p>
-                        <button><a href="{{-- {{route('registerpage')}} --}}" class="text-uppercase">sign up</a></button>
+                        <button><a href="{{route('registerpage
+                        ')}}" class="text-uppercase">sign up</a></button>
                     </div>
                 </div>
             </div>

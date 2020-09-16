@@ -23,7 +23,7 @@ Route::get('/registerpage', 'FrontendController@registerfun')->name('registerpag
 Route::get('/loginpage', 'FrontendController@loginfun')->name('loginpage');
 Route::get('/', 'FrontendController@mainfun')->name('mainpage');
 Route::get('/partner', 'FrontendController@partnerfun')->name('partnerpage');
-Route::get('/viewdetail', 'FrontendController@viewdetailfun')->name('viewdetailpage');
+Route::get('viewdetail/{id}', 'FrontendController@viewdetailfun')->name('viewdetailpage');
 
 
 Route::get('/contact', 'FrontendController@contactfun')->name('contactpage');

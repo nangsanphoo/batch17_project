@@ -15,29 +15,29 @@
            <table class="table" border="0" >
             <tr>
               <td rowspan="7">
-                <img src="#" style="width: 300px; height: 400px" class="img-fluid">
+                <img src="{{asset($members->photo)}}" style="width: 300px; height: 400px" class="img-fluid">
               </td>
 
-              <td>Name :  {{-- {{$member->name}} --}}
+              <td>Name :   {{$members->name}} 
               </td>
             </tr>
 
             <tr>
               <td>
-               Gender : {{-- {{$member->gender}} --}}
+               Gender :  {{$members->gender}} 
              </td>
            </tr>
 
            <tr>
             <td>
-             Age : {{-- {{$member->age}}  --}}
+             Age :  {{$members->age}}  
            </td>
          </tr>
 
 
          <tr>
           <td>
-           Description : {{-- {{$member->description}} --}}
+           Description :  {{$members->description}} 
          </td>
        </tr>
 

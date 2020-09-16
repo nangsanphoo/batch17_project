@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Member;
 
 class FrontendController extends Controller
 {
@@ -26,15 +27,14 @@ class FrontendController extends Controller
 	}
 	public function partnerfun($value='')
 	{ 	
-		
 		return view('frontend.partner');
 
 	}
 
-	public function viewdetailfun($value='')
+	public function viewdetailfun($id)
 	{ 	
-		
-		return view('frontend.viewdetail');
+		$members =Member::find($id);
+		return view('frontend.viewdetail',compact('members'));
 
 	}
 	public function contactfun($value='')
@@ -45,8 +45,8 @@ class FrontendController extends Controller
 	}
 	public function profilefun($value='')
 	{ 	
-		
-		return view('frontend.profile');
+		$members=Member::all();
+		return view('frontend.profile',compact('members'));
 
 	}
 }

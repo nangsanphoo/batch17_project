@@ -15,29 +15,29 @@
            <table class="table" border="0" >
             <tr>
               <td rowspan="7">
-                <img src="#" style="width: 300px; height: 400px" class="img-fluid">
+                <img src="{{asset($members->photo)}}" style="width: 300px; height: 400px" class="img-fluid">
               </td>
 
-              <td>Name :  
+              <td>Name :   {{$members->name}} 
               </td>
             </tr>
 
             <tr>
               <td>
-               Gender : 
+               Gender :  {{$members->gender}} 
              </td>
            </tr>
 
            <tr>
             <td>
-             Age : 
+             Age :  {{$members->age}}  
            </td>
          </tr>
 
 
          <tr>
           <td>
-           Description : 
+           Description :  {{$members->description}} 
          </td>
        </tr>
 
@@ -48,7 +48,7 @@
  </div>
 
  <div class="text-left">
-   <a href="#" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
+   <a href="{{route('profilepage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
    <a href="#" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Join</a>
  </div>
 

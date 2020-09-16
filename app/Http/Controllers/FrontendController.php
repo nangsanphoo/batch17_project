@@ -27,17 +27,20 @@ class FrontendController extends Controller
 	}
 	public function partnerfun($value='')
 	{ 	
+<<<<<<< HEAD
         $members=Member::all();
 
 		
+=======
+>>>>>>> e4f8834ee1087501bdbdbbdf70d51d9e0c4dd2ac
 		return view('frontend.partner');
 
 	}
 
-	public function viewdetailfun($value='')
+	public function viewdetailfun($id)
 	{ 	
-		
-		return view('frontend.viewdetail');
+		$members =Member::find($id);
+		return view('frontend.viewdetail',compact('members'));
 
 	}
 	public function contactfun($value='')
@@ -48,8 +51,8 @@ class FrontendController extends Controller
 	}
 	public function profilefun($value='')
 	{ 	
-		
-		return view('frontend.profile');
+		$members=Member::all();
+		return view('frontend.profile',compact('members'));
 
 	}
 }

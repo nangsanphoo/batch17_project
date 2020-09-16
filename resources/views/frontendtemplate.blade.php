@@ -21,9 +21,10 @@
 
                 <div class="collapse navbar-collapse" id="show-menu">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        
+                
+
                             <a class="nav-link" href="{{route('mainpage')}}">Home <span class="sr-only">(current)</span></a>
-                        </li>
                         @role('Customer')
             <span classs="float-right d-xl-block d-lg-block d-md-block d-none">
               <a id="navbarDropdown" class="nav-link dropdown-toggle loginLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -43,29 +44,21 @@
               </div>
             </span>
             @else
+<<<<<<< HEAD
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('loginpage')}}">Login</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
                         </li>
+=======
+                            <a class="nav-link" href="{{route('loginpage')}}">Login</a>
+                            <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
+>>>>>>> 543cc11ef4478a7a2df8e936dafd3f69f7ef0835
                         @endrole
                         
-                        <li class="nav-item">
                             <a class="nav-link" href="{{route('contactpage')}}">contact us</a>
-                        </li>
-                        <!-- <li class="nav-item .search-container">
-                            <a class="nav-link search" href="#"><i class="fas fa-search"></i></a>
-                            <form>
-                                <input type="search">
-                            </form>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-user"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="far fa-heart"></i></a>
-                        </li> -->
+                        
                     </ul>
                 </div>
             </div>
@@ -78,7 +71,7 @@
                 
             </div>
             <div class="copyright text-center">
-                <p>Copyright 2020  Design by <a href="https://html.design">Cupid's Heart Company</a></p>
+                <p>Copyright 2020  Design by Cupid's Heart Company</a></p>
             </div>
         </footer>
         

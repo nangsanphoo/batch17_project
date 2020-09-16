@@ -19,13 +19,19 @@ use Illuminate\Support\Facades\Route;
 
 // });
 
-Route::get('register', 'FrontendController@registerfun')->name('registerpage');
-Route::get('login', 'FrontendController@loginfun')->name('loginpage');
+Route::get('/registerpage', 'FrontendController@registerfun')->name('registerpage');
+Route::get('loginpage', 'FrontendController@loginfun')->name('loginpage');
 Route::get('/', 'FrontendController@mainfun')->name('mainpage');
-Route::get('partner', 'FrontendController@partnerfun')->name('partnerpage');
-Route::get('viewdetail', 'FrontendController@viewdetailfun')->name('viewdetailpage');
+Route::get('/partner', 'FrontendController@partnerfun')->name('partnerpage');
+Route::get('viewdetail/{id}', 'FrontendController@viewdetailfun')->name('viewdetailpage');
 
-Route::get('contact', 'FrontendController@contactfun')->name('contactpage');
+
+
+
+Route::get('/contact', 'FrontendController@contactfun')->name('contactpage');
+
+Route::get('profile', 'FrontendController@profilefun')->name('profilepage');
+
 
 
 
@@ -44,3 +50,4 @@ Route::middleware('role:Admin')->group(function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+

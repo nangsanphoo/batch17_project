@@ -44,7 +44,7 @@
                   </div>
                 </div>
               </div>
-              <div class="form-row">
+             {{--  <div class="form-row">
 
                 <div class="col-md-8">
 
@@ -54,17 +54,46 @@
 
                   </div>
                 </div>
-              </div>
+              </div> --}}
               <div class="form-row">
                 <div class="col-md-8 ">
                   <div class="form-group" style="font-size:25px">
                     <label class="small mb-1" for="inputAge"> Age*</label>
-                    <input class="form-control py-4" id="inputAge" type="text" placeholder="Enter Age" name="age" />
+                    
+                    <select class="form-control " id="inputAge" name="age" placeholder="Select Age">
+                      <option value="gender" >Select Age</option>
+
+                      <option value="A1">20</option>
+                      <option value="A2">21</option>
+                       <option value="A3">23</option>
+                      <option value="A4">24</option>
+                       <option value="A5">25</option>
+                      <option value="A6">26</option>
+                       <option value="A7">27</option>
+                      <option value="A8">28</option>
+                       <option value="A9">29</option>
+                      <option value="A10">30</option>
+                       <option value="A11">31</option>
+                      <option value="A12">32</option>
+                       <option value="A13">33</option>
+                      <option value="A14">34</option>
+                       <option value="A15">35</option>
+                      <option value="A16">36</option>
+                       <option value="A17">37</option>
+                      <option value="A18">38</option>
+                       <option value="A19">39</option>
+                      <option value="A20">40</option>
+                       
+
+                    </select>
+                    
                   </div>
                 </div>
               </div>
 
-              <div class="form-row">
+              
+
+             {{--  <div class="form-row">
 
                 <div class="col-md-8">
                   <div class="form-group" style="font-size:25px">
@@ -85,7 +114,7 @@
 
                   </div>
                 </div>
-              </div>
+              </div> --}}
 
               <div class="col-md-8">
 

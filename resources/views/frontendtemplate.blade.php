@@ -29,6 +29,7 @@
             <span classs="float-right d-xl-block d-lg-block d-md-block d-none">
               <a id="navbarDropdown" class="nav-link dropdown-toggle loginLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                   {{ Auth::user()->name }}
+                  <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="20" height="20">
               </a>
 
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -44,6 +45,7 @@
               </div>
             </span>
             @else
+             
                             <a class="nav-link" href="{{route('loginpage')}}">Login</a>
                             <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
                         @endrole

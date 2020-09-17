@@ -43,10 +43,12 @@ class FrontendController extends Controller
 		return view('frontend.contact');
 
 	}
-	public function profilefun($value='')
+	public function profilefun(Request $request)
 	{ 	
+		$gender=request('gender');
+		$filter=Member::where('gender','!=',$gender)->get();
 		$members=Member::all();
-		return view('frontend.profile',compact('members'));
+		return view('frontend.profile',compact('members','filter'));
 
 	}
 }

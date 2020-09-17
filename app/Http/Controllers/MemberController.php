@@ -12,8 +12,15 @@ class MemberController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
+        $gender=$request->input('gender');
+        $age=$request->input('age');
+
+        $query=Member::query();
+        if(!empty($gender)){
+            $query->where('gender',$gender);
+        }
         $members=Member::all();
         //dd($items);
         return view('backend.members.index',compact('members'));

@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/registerpage', 'FrontendController@registerfun')->name('registerpage');
-Route::get('loginpage', 'FrontendController@loginfun')->name('loginpage');
+Route::get('/loginpage', 'FrontendController@loginfun')->name('loginpage');
 Route::get('/', 'FrontendController@mainfun')->name('mainpage');
 Route::get('/partner', 'FrontendController@partnerfun')->name('partnerpage');
 Route::get('viewdetail/{id}', 'FrontendController@viewdetailfun')->name('viewdetailpage');
@@ -30,7 +30,7 @@ Route::get('viewdetail/{id}', 'FrontendController@viewdetailfun')->name('viewdet
 
 Route::get('/contact', 'FrontendController@contactfun')->name('contactpage');
 
-Route::get('profile', 'FrontendController@profilefun')->name('profilepage');
+Route::post('profile', 'FrontendController@profilefun')->name('profilepage');
 
 
 
@@ -44,7 +44,6 @@ Route::middleware('role:Admin')->group(function () {
 	Route::resource('members','MemberController');
 
 });
-
 
 
 Auth::routes();

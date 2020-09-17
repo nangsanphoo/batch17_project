@@ -3,55 +3,7 @@
 @section('content')
 
 <div class="contact" {{-- id="sign up" --}}>
- {{--  <div class="violet-overlay">
-    <div class="container">
-      <h2 class="text-center">Register From</h2>
-
-      <div class="container my-5">
-
-        <div class="row justify-content-center">
-          <div class="col-8">
-            <form action="{{route('registerpage')}}" method="POST">
-              <div class="form-row">
-                <div class="col-md-10">
-                  <div class="form-group" style="font-size:25px">
-                    <label class="small mb-1" for="inputName"> Username*</label>
-                    <input class="form-control py-4" id="inputName" type="text" 
-                    name="name" />
-                  </div>
-                </div>
-              </div>
-              <div class="form-row">
-
-                <div class="col-md-10">
-
-                  <div class="form-group" style="font-size:25px">
-                    <label class="small mb-1" for="inputEmailAddress">Email*</label>
-                    <input class="form-control py-4" id="inputEmailAddress" type="email" aria-describedby="emailHelp" placeholder="Enter email address" name="email" />
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-row">
-
-                <div class="col-md-10">
-                  <div class="form-group" style="font-size:25px">
-                    <label class="small mb-1" for="inputPassword">Password*</label>
-                    <input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" name="password" />
-                    <font id="error" color="red"></font>
-                  </div>
-
-                </div>
-              </div>
-              <div class="form-row">
-
-                <div class="col-md-10">
-                  <div class="form-group" style="font-size:25px">
-                    <label class="small mb-1" for="inputConfirmPassword">Confirm Password*</label>
-                    <input class="form-control py-4" id="inputConfirmPassword" type="password" placeholder="Confirm password" name="confirmpassword"/>
-                    <font id="cerror" color="red"></font>
-
-======= --}}
+ 
     <div class="violet-overlay">
         <div class="container">
             <h2 class="text-center">Register From</h2>

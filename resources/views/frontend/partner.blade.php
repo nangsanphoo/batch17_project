@@ -11,7 +11,8 @@
 
         <div class="row justify-content-center">
           <div class="col-8">
-            <form action="{{route('partnerpage')}}" method="POST" >
+            <form action="{{route('profilepage')}}" method="POST" >
+              @csrf
               <div class="form-row">
 
                 <div class="col-md-8">
@@ -28,22 +29,25 @@
                   </div>
                 </div>
               </div>
-              <div class="form-row">
+              {{-- <div class="form-row">
 
                 <div class="col-md-8">
 
                   <div class="form-group"style="font-size:25px">
                     <label class="small mb-1" for="gender"> Seeking a*</label>
                     <select class="form-control " id="gender" name="gender" placeholder="Select Gender">
+
                       <option value="gender" >Select Gender</option>
 
                       <option value="Male">Male</option>
                       <option value="female">Female</option>
 
+
+
                     </select>
                   </div>
                 </div>
-              </div>
+              </div> --}}
              {{--  <div class="form-row">
 
                 <div class="col-md-8">
@@ -118,7 +122,11 @@
 
               <div class="col-md-8">
 
-                <a href="#" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Next</a>
+<<<<<<< HEAD
+                <input type="submit" value="Search" class="btn btn-secondary my-3" style="background-color: #bd8cbf;padding: 10px 40px; float: right">
+=======
+                <input type="submit" value="Search" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >
+>>>>>>> a6944fd3e107ca3a42b1be8b880a8f470e3535f2
               </div>
             </form>
 

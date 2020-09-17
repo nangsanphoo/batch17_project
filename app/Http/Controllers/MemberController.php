@@ -8,12 +8,32 @@ use Illuminate\Http\Request;
 class MemberController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource. 
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
+<<<<<<< HEAD
     {
+        $gender=$request->input('gender');
+        $age=$request->input('age');
+
+        $query=Member::query();
+        if(!empty($gender)){
+            $query->where('gender',$gender);
+        }
+=======
+    {   
+        $gender = $request->input('gender');
+        $age = $request->input('age');
+
+        $query = Member::query();
+        if(!empty($gender)){
+            $query->where('gender',$gender);
+
+        }
+        // dd($gender);
+>>>>>>> a6944fd3e107ca3a42b1be8b880a8f470e3535f2
         $members=Member::all();
         //dd($items);
         return view('backend.members.index',compact('members'));

@@ -122,11 +122,9 @@
 
               <div class="col-md-8">
 
-<<<<<<< HEAD
+
                 <input type="submit" value="Search" class="btn btn-secondary my-3" style="background-color: #bd8cbf;padding: 10px 40px; float: right">
-=======
-                <input type="submit" value="Search" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >
->>>>>>> a6944fd3e107ca3a42b1be8b880a8f470e3535f2
+
               </div>
             </form>
 

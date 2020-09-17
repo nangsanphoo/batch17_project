@@ -55,17 +55,8 @@
   </div>
 </nav>
 
-<<<<<<< HEAD
-                            <a class="nav-link" href="{{route('mainpage')}}">Home <span class="sr-only">(current)</span></a>
-                        @role('Customer')
-            <span classs="float-right d-xl-block d-lg-block d-md-block d-none">
-              <a id="navbarDropdown" class="nav-link dropdown-toggle loginLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                  {{ Auth::user()->name }}
-                  <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60" width="20" height="20">
-              </a>
-=======
+
 @yield('content')
->>>>>>> c4e897333cde9843f6353ef95bf18b054d0c7a4d
 
 <footer>
     <div class="container">
@@ -76,30 +67,11 @@
     </div>
 </footer>
 
-<<<<<<< HEAD
-                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                      @csrf
-                  </form>
-              </div>
-            </span>
-            @else
-             
-                            <a class="nav-link" href="{{route('loginpage')}}">Login</a>
-                            <a class="nav-link" href="{{route('registerpage')}}">sign up</a>
-                        @endrole
-                        
-                            <a class="nav-link" href="{{route('contactpage')}}">contact us</a>
-                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
-=======
+                  
 <script src="{{asset('frontend/js/jquery-3.3.1.min.js')}}"></script>
 <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
 <script>
     $(function () {
->>>>>>> c4e897333cde9843f6353ef95bf18b054d0c7a4d
         
         'use strict';
         

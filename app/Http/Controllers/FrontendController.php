@@ -49,10 +49,12 @@ class FrontendController extends Controller
 		//dd($request);
 		//dd($gender);
 		$gender = request('gender');
-		$filter = Member::where('gender','!=',$gender)->get();
-		//dd($filter);
+		$age=request('age');
+		//dd($age);
+		$filters = Member::where('gender','!=',$gender)->where('age' ,$age)->get();
+		//dd($filters);
 		$members=Member::all();
-		return view('frontend.profile',compact('filter','members'));
+		return view('frontend.profile',compact('filters','members'));
 
 	}
 }

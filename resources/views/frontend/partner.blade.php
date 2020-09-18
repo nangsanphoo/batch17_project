@@ -23,7 +23,7 @@
                       <option value="gender" >Select Gender</option>
 
                       <option value="Male">Male</option>
-                      <option value="female">Female</option>
+                      <option value="Female">Female</option>
 
                     </select>
                   </div>
@@ -65,28 +65,30 @@
                     <label class="small mb-1" for="inputAge"> Age*</label>
                     
                     <select class="form-control " id="inputAge" name="age" placeholder="Select Age">
-                      <option value="gender" >Select Age</option>
+                      <option value="age" >Select Age</option>
 
-                      <option value="A1">20</option>
-                      <option value="A2">21</option>
-                       <option value="A3">23</option>
-                      <option value="A4">24</option>
-                       <option value="A5">25</option>
-                      <option value="A6">26</option>
-                       <option value="A7">27</option>
-                      <option value="A8">28</option>
-                       <option value="A9">29</option>
-                      <option value="A10">30</option>
-                       <option value="A11">31</option>
-                      <option value="A12">32</option>
-                       <option value="A13">33</option>
-                      <option value="A14">34</option>
-                       <option value="A15">35</option>
-                      <option value="A16">36</option>
-                       <option value="A17">37</option>
-                      <option value="A18">38</option>
-                       <option value="A19">39</option>
-                      <option value="A20">40</option>
+                      <option value="20">20</option>
+                      <option value="21">21</option>
+                      <option value="22">22</option>
+
+                       <option value="23">23</option>
+                      <option value="24">24</option>
+                       <option value="25">25</option>
+                      <option value="26">26</option>
+                       <option value="27">27</option>
+                      <option value="28">28</option>
+                       <option value="29">29</option>
+                      <option value="30">30</option>
+                       <option value="31">31</option>
+                      <option value="32">32</option>
+                       <option value="33">33</option>
+                      <option value="34">34</option>
+                       <option value="35">35</option>
+                      <option value="36">36</option>
+                       <option value="37">37</option>
+                      <option value="38">38</option>
+                       <option value="39">39</option>
+                      <option value="40">40</option>
                        
 
                     </select>
@@ -97,7 +99,7 @@
 
               
 
-             {{--  <div class="form-row">
+              {{-- <div class="form-row">
 
                 <div class="col-md-8">
                   <div class="form-group" style="font-size:25px">
@@ -107,23 +109,44 @@
                   </div>
 
                 </div>
-              </div>
+              </div> --}}
               <div class="form-row">
 
                 <div class="col-md-8">
                   <div class="form-group" style="font-size:25px">
-                    <label class="small mb-1" for="inputConfirmPassword">Hobby*</label>
-                    <input class="form-control py-4" id="inputHobby" type="text" placeholder="Enter Hobby" />
-                    <font id="error" color="red"></font>
+                    <label class="small mb-1" for="inputHobby">Hobby *</label>
+                    <select class="form-control " id="inputHobby" name="hobbies" placeholder="Select...">
+
+                      <option value="dancing">Dancing</option>
+                      <option value="singing">Singing</option>
+                      <option value="swimming">Swimming</option>
+
+                       <option value="reading">Reading</option>
+                      <option value="photography">Photography</option>
+                       <option value="acting">Acting</option>
+                      <option value="painting">Painting</option>
+                       <option value="backing">Backing</option>
+                      <option value="boxing">Boxiong</option>
+                       <option value="cooking">Cooking</option>
+                      <option value="cycling">Cycling</option>
+                       <option value="fitness">Fitness</option>
+                      <option value="hiking">Hiking</option>
+                       <option value="beauty">Beauty</option>
+                      <option value="traveling">Travelling</option>
+                       <option value="shopping">Shopping</option>
+                      <option value="yoga">Yoga</option>
+                       
+
+                    </select>
 
                   </div>
                 </div>
-              </div> --}}
+              </div> 
 
               <div class="col-md-8">
 
 
-                <input type="submit" value="Search" class="btn btn-secondary my-3" style="background-color: #bd8cbf;padding: 10px 40px; float: right">
+                <input type="submit" value="Search" class="btn btn-secondary my-4" style="background-color: #bd8cbf;padding: 3px ; float: right">
 
               </div>
             </form>

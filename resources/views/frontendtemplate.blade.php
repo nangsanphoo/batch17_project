@@ -25,6 +25,7 @@
                     
 
                     <a class="nav-link" href="{{route('mainpage')}}">Home <span class="sr-only">(current)</span></a>
+                    
                     @role('Customer')
                     <span classs="float-right d-xl-block d-lg-block d-md-block d-none">
                       <a id="navbarDropdown" class="nav-link dropdown-toggle loginLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

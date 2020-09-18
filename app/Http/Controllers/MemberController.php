@@ -15,14 +15,14 @@ class MemberController extends Controller
     public function index(Request $request)
 
     {   
-        $gender = $request->input('gender');
-        $age = $request->input('age');
+        // $gender = $request->input('gender');
+        // $age = $request->input('age');
 
-        $query = Member::query();
-        if(!empty($gender)){
-            $query->where('gender',$gender);
-
-        }
+        // $query = Member::query();
+        // if(!empty($gender)){
+        //     $query->where('gender',$gender);
+        //     $query->where('age',$age);
+        // }
         // dd($gender);
         $members=Member::all();
         //dd($items);

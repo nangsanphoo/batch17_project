@@ -57,5 +57,11 @@ class FrontendController extends Controller
 		return view('frontend.profile',compact('filters','members'));
 
 	}
+	public function paymentfun(Request $request)
+	{ 	
+		//dd($request)->all();
+		return view('frontend.payment');
+
+	}
 }
 

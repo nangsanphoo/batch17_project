@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/fontawesome.min.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+    
 </head>
 <body>
     
@@ -98,5 +99,6 @@
         });
     })
 </script>
+
 </body>
 </html>

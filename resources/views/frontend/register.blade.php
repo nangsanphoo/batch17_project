@@ -81,17 +81,7 @@
                   </div>
                 </div>
               </div>
-              {{-- <div class="form-group" style="font-size:25px">
-                <label class="small mb-1" for="gender"> I'm a*</label>
-                <select class="form-control " id="gender" name="gender" placeholder="Select Gender">
-                  <option value="gender" >Select Gender</option>
-
-                  <option value="Male">Male</option>
-                  <option value="female">Female</option>
-
-                </select>
-              </div>
-            </div> --}}
+              
 
             <div class="form-row">
 

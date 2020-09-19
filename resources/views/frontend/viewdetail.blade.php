@@ -44,13 +44,13 @@
      </table>
 
    </div>
-   </div>
  </div>
+</div>
 
- <div class="text-left">
-   <a href="{{-- {{route('profilepage')}} --}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
-   <a href="#" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Join</a>
- </div>
+<div class="text-left">
+ <a href=" {{route('partnerpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
+ <a href="#" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Join</a>
+</div>
 </div>
 </div>
 </div>

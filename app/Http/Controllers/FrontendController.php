@@ -43,6 +43,12 @@ class FrontendController extends Controller
 		return view('frontend.contact');
 
 	}
+	public function matchfun($value='')
+	{ 	
+		
+		return view('frontend.match');
+
+	}
 	public function profilefun(Request $request)
 	{ 	
 

@@ -43,7 +43,7 @@
 
      </table>
 
-
+   </div>
    </div>
  </div>
 
@@ -51,8 +51,6 @@
    <a href="{{route('partnerpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
    <a href="{{route('paymentpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Join</a>
  </div>
-
-</div>
 </div>
 </div>
 </div>

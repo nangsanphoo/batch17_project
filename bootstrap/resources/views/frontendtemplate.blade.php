@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/fontawesome.min.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-    
 </head>
 <body>
     
@@ -26,7 +25,6 @@
                     
 
                     <a class="nav-link" href="{{route('mainpage')}}">Home <span class="sr-only">(current)</span></a>
-                    
                     @role('Customer')
                     <span classs="float-right d-xl-block d-lg-block d-md-block d-none">
                       <a id="navbarDropdown" class="nav-link dropdown-toggle loginLink" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -70,7 +68,7 @@
 </footer>
 
                   
-<script src="{{asset('frontend/js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{asset('frontend/js/jquery.min.js')}}"></script>
 <script src="{{asset('frontend/js/bootstrap.min.js')}}"></script>
 <script>
     $(function () {
@@ -99,6 +97,5 @@
         });
     })
 </script>
-
 </body>
 </html>

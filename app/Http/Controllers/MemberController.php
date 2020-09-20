@@ -23,7 +23,7 @@ class MemberController extends Controller
             $query->where('gender',$gender);
 
         }
-        // dd($gender);
+        //dd($gender);
         $members=Member::all();
         //dd($items);
         return view('backend.members.index',compact('members'));

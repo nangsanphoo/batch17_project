@@ -15,20 +15,15 @@
 
 
              <section class="contact-section">
-              {{-- <div class="container mt-5"> --}}
-                        
-
-        <div class="col-md-12 ">
-        <div class="row">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d59484.27660013569!2d99.57460565618648!3d21.28067733061379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d4415cf792df8d%3A0x77ab811d8ded7cea!2sKeng%20Tung!5e0!3m2!1sen!2smm!4v1596437186130!5m2!1sen!2smm" width="400" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      
-         </div>
+              <div class="container">
+                <div class="d-none d-sm-block mb-5 pb-4">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118968.56198203056!2d99.53958503069242!3d21.280666472111605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30d4415cf792df8d%3A0x77ab811d8ded7cea!2sKeng%20Tung!5e0!3m2!1sen!2smm!4v1600058753441!5m2!1sen!2smm" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
               </div>
-
             </section>
 
             <div class="col-md-12">
-              <div class="row my-5">
+              <div class="row">
                 <h4><strong>Get in touch with us</strong></h4>               
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -60,13 +55,13 @@
 
 
 
-          </form>
+              </form>
+            </div>
+          </div>
+
         </div>
+
       </div>
-
     </div>
-
   </div>
-</div>
-</div>
-@endsection
+  @endsection

@@ -11,17 +11,16 @@
 
         <div class="row justify-content-center">
           <div class="col-8">
-            <form action=" {{-- {{route('viewdetailpage')}} --}} " method="POST" >
+            <form action="{{-- {{route('profilepage')}} --}}" method="POST" >
               <div class="row">
                 <div class="col-12">
                   <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
                     <div class="MultiCarousel-inner">
-                      @foreach($filters as $member)
+                      @foreach($members as $member)
                       <div class="member">
                          <a href="{{route('viewdetailpage',$member->id)}}"> 
                           <div class="pad15">
                             <img src="{{asset($member->photo)}}" class="img-fluid">
-                            
                             <p class="text-truncate">{{$member->name}}</p>
                            
 

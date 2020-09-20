@@ -16,18 +16,18 @@
             <table class="table" border="0" >
               <tr>
                 <td rowspan="7">
-                  <img src="frontend/imgs/m3.jpg" style="width: 400px; height: 350px" class="img-fluid">
+                  <img src="#" style="width: 300px; height: 400px" class="img-fluid">
                 </td>
                 <td> Date : 25.9.2020  </td>
               </tr>
               <tr>
                 <td>
-                     Time : 9:00 am  
+                 Time : 9:00 am  
                </td>
              </tr>
              <tr>
               <td>
-                     Location : Cupid's Heart Company   
+               Location : Cupid's Heart Company   
              </td>
            </tr>
 
@@ -42,5 +42,3 @@
 </div>
 
 @endsection
-
-

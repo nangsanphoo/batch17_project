@@ -22,6 +22,21 @@
               </td>
             </tr>
 
+<<<<<<< HEAD
+=======
+            <tr>
+              <td>
+               Email :  {{$members->email}} 
+             </td>
+           </tr>
+
+           <tr>
+            <td>
+             Phone No :  {{$members->phoneno}} 
+           </td>
+         </tr>
+
+>>>>>>> ea1e4329bfb94a9fb138e65dae4ca5962fa7d8bf
          <tr>
           <td>
            Gender :  {{$members->gender}} 
@@ -40,12 +55,21 @@
      </td>
    </tr>
 
+<<<<<<< HEAD
+=======
+   <tr>
+    <td>
+     Address :  {{$members->address}}  
+   </td>
+ </tr>
+>>>>>>> ea1e4329bfb94a9fb138e65dae4ca5962fa7d8bf
 
  <tr>
   <td>
    Description :  {{$members->description}} 
  </td>
 </tr>
+<<<<<<< HEAD
 
 </table>
 
@@ -53,6 +77,15 @@
 </div>
 </div>
 
+=======
+
+</table>
+
+</div>
+</div>
+</div>
+
+>>>>>>> ea1e4329bfb94a9fb138e65dae4ca5962fa7d8bf
 
 <div class="text-left">
  <a href="{{route('partnerpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>

@@ -55,13 +55,13 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="#">
         
           <span>User Register Lists</span>
         </a>
         
-      </li>
+      </li> --}}
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
@@ -75,13 +75,13 @@
       <!-- Divider -->
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" >
           
           <span>Match Lists</span>
         </a>
         
-      </li>
+      </li> --}}
 
       <!-- Nav Item - Charts -->
       

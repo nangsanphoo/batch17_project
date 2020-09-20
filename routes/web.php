@@ -25,6 +25,9 @@ Route::get('/', 'FrontendController@mainfun')->name('mainpage');
 Route::get('/partner', 'FrontendController@partnerfun')->name('partnerpage');
 Route::get('viewdetail/{id}', 'FrontendController@viewdetailfun')->name('viewdetailpage');
 
+
+Route::get('payment','FrontendController@paymentfun')->name('paymentpage');
+
 Route::get('match', 'FrontendController@matchfun')->name('matchpage');
 
 

@@ -12,22 +12,13 @@
         <div class="row justify-content-center">
           <div class="col-10">
             <!-- Content Row -->
-<<<<<<< HEAD
             @foreach($matches as $match)
             <table class="table" border="0" style="">
                <tr>
                 <td>
                   <img src="{{asset($match->user->photo)}}" style="width: 300px; height: 300px" class="img-fluid">
-=======
 
-            <table class="table" border="0" >
-              <tr>
-                <td rowspan="7">
-                  <img src="frontend/imgs/m3.jpg" style="width: 400px; height: 350px" class="img-fluid">
->>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
-                </td>
                 <td>
-<<<<<<< HEAD
                 <img src="{{asset('frontend/imgs/heart.png')}}" style="width: 200px; height: 200px;padding-top: 50px;" class="img-fluid">
                 </td>
                 <td>
@@ -40,17 +31,7 @@
                 <td>Name : {{$match->member->user->name}}  </td>
               </tr>
  -
-=======
-                     Time : 9:00 am  
-               </td>
-             </tr>
-             <tr>
-              <td>
-                     Location : Cupid's Heart Company   
-             </td>
-           </tr>
 
->>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
          </table>
          @endforeach
          <div class="row justify-content-center">

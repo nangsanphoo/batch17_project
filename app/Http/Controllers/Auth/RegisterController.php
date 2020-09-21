@@ -52,8 +52,20 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+<<<<<<< HEAD
+            'password' => ['required', 'string', 'min:5', 'confirmed'],
+            'address'=>['required','string','max:255'],
+            'DOB'=>['required','date'],
+            'photo'=>['required']
+=======
             'password' => ['required', 'string', 'min:8', 'confirmed'],
+            /*'address' => ['required'],
+            'birthday' => ['required'],
+            'photo' => ['required'],*/
+
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
         ]);
+        //dd($data);
     }
 
     /**
@@ -64,15 +76,28 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $image=time().'.'.$data['photo']->extension();
+        $data['photo']->move(public_path('userimg'),$image);
+        $path='userimg/'.$image;
+
         $user= User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'address' => $data['address'],
-            
-        ]);
+<<<<<<< HEAD
+            'photo' =>$path,
+            'DOB' =>$data['DOB']
+=======
+            /*'birthday'=>$data['birthday'],
+            'photo' => $data['photo'],*/
 
-        $user->assignRole('Customer');
+            
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
+        ]);
+        //dd($data);
+
+        $user->assignRole('User');
 
         return $user;
     }
@@ -86,7 +111,7 @@ class RegisterController extends Controller
             case 'Admin':
                     return 'dashboard';
                 break;
-            case 'Customer':
+            case 'User':
                     return 'partner';
                 break; 
             default:

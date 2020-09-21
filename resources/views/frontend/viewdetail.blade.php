@@ -14,43 +14,100 @@
 
            <table class="table" border="0" >
             <tr>
-              <td rowspan="7">
+<<<<<<< HEAD
+              <td rowspan="6">
+                <img src="{{asset($members->user->photo)}}" style="width: 300px; height: 400px" class="img-fluid">
+=======
+              <td rowspan="8">
                 <img src="{{asset($members->photo)}}" style="width: 300px; height: 400px" class="img-fluid">
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
               </td>
 
-              <td>Name :   {{$members->name}} 
+              <td>Name :   {{$members->user->name}} 
               </td>
             </tr>
 
+<<<<<<< HEAD
+=======
             <tr>
               <td>
-               Gender :  {{$members->gender}} 
+               Email :  {{$members->email}} 
              </td>
            </tr>
 
            <tr>
             <td>
-             Age :  {{$members->age}}  
+             Phone No :  {{$members->phoneno}} 
            </td>
          </tr>
 
+<<<<<<< HEAD
 
+         
+=======
+>>>>>>> ea1e4329bfb94a9fb138e65dae4ca5962fa7d8bf
          <tr>
           <td>
-           Description :  {{$members->description}} 
+           Gender :  {{$members->gender}} 
          </td>
        </tr>
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
 
-     </table>
+       <tr>
+        <td>
+         Age :  {{$members->age}} 
+       </td>
+     </tr>
 
-   </div>
-   </div>
- </div>
+     <tr>
+      <td>
+       Hobbies :  {{$members->hobbies}}  
+     </td>
+   </tr>
 
+<<<<<<< HEAD
+=======
+   <tr>
+    <td>
+     Address :  {{$members->address}}  
+   </td>
+ </tr>
+>>>>>>> ea1e4329bfb94a9fb138e65dae4ca5962fa7d8bf
+
+ <tr>
+  <td>
+   Description :  {{$members->description}} 
+ </td>
+</tr>
+<<<<<<< HEAD
+
+</table>
+
+</div>
+</div>
+</div>
+
+=======
+
+</table>
+
+</div>
+</div>
+</div>
+
+>>>>>>> ea1e4329bfb94a9fb138e65dae4ca5962fa7d8bf
+
+<<<<<<< HEAD
  <div class="text-left">
    <a href="{{route('partnerpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
-   <a href="{{route('paymentpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Join</a>
+   <a href="{{route('matchjoin',$members->id)}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right">Join</a>
  </div>
+=======
+<div class="text-left">
+ <a href="{{route('partnerpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
+ <a href="{{route('paymentpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Join</a>
+</div>
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
 </div>
 </div>
 </div>

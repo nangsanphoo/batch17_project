@@ -2,16 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Match;
 use Illuminate\Http\Request;
 
 class MatchController extends Controller
 {
-    // public function __construct($value='')
-    // {
-    //     $this->middleware('role:Admin')->only('index','show');
-    //     $this->middleware('role:Customer')->only('store');
-    // }
     /**
      * Display a listing of the resource.
      *
@@ -19,8 +13,7 @@ class MatchController extends Controller
      */
     public function index()
     {
-        // $matchs=Match::all();
-        // return view('backend.matchs.index',compact('matchs'));
+        //
     }
 
     /**
@@ -30,7 +23,7 @@ class MatchController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -39,29 +32,41 @@ class MatchController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request,$id)
     {
         
+
+        //If include file, upload file
+        //Data insert
+        // $match=new Match;
+        // $match->user_id=Auth::id();
+        // $match->meber_id=$id;
+        // $match->save();
+
+        // //redirect
+        // $matches=Match::all();
+      // dd("hello");
+        //return view('frontend.match',compact('matches'));
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Match  $match
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Match $match)
+    public function show($id)
     {
-        //return view('backend.matchs.show',compact('match'));
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Match  $match
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Match $match)
+    public function edit($id)
     {
         //
     }
@@ -70,10 +75,10 @@ class MatchController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Match  $match
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Match $match)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -81,10 +86,10 @@ class MatchController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Match  $match
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Match $match)
+    public function destroy($id)
     {
         //
     }

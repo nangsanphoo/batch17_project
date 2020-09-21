@@ -47,17 +47,17 @@ class LoginController extends Controller
         $roles=auth()->user()->getRoleNames();
 
         // Check user role
-        switch ($roles[0]) {
-            case 'Admin':
-                    return 'dashboard';
-                break;
-            case 'Customer':
-                    return 'partner';
-                break; 
-            default:
-                    return '/';  
-                break;
+        if($roles[0]=="Admin"){
+            return 'dashboard';
         }
-
+        else if($roles[0]=="User"){
+            return '/partner';
+        }
+        else if($roles[0]=="Member"){
+            return '/userrequestlist';
+        }
+        else{
+            return '/';
+        }
     }
 }

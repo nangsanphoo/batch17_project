@@ -15,7 +15,8 @@
         "laravel/framework": "^7.24",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.4",
-        "spatie/laravel-permission": "^3.16"
+        "spatie/laravel-permission": "^3.16",
+        "srmklive/paypal": "^1.8"
     },
     "require-dev": {
         "facade/ignition": "^2.0",

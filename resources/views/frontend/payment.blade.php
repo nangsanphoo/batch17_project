@@ -27,103 +27,33 @@
 
 		        <div class="row justify-content-center">
 		        	<div class="col-8">
-			  			<form action="{{-- {{route('paymentpage')}} --}}" method="POST" >
-                     		
-
+			  			<form action="{{-- {{route('payments.store')}} --}}" method="POST">	
+			  				@csrf
 			  				{{-- <div class="form-group">
 			  					<label for="name">Name</label>
 			  					<input type="text" class="form-control" id="name_on_card" name="name">
 			  				</div> --}}
 			  				<div class="form-group ">
 			  					<label for="cardno">Card No.</label>
-			  					<input class="form-control py-4" id="cardno" type="text" placeholder="Enter card no." name="cardno">
+			  					<input class="form-control py-4" id="cardno" type="text" name="cardno">
+			  					@error('cardno')
+						    	<div class="text-danger">{{$message}}</div>
+						    	@enderror
 				               
 			  				</div>
 			  				<div class="form-group ">
 			  					<label for="amount">Amount</label>
-			  					<input class="form-control py-4" id="amount" type="text" name="amount">
+			  					<input class="form-control py-4" id="amount" type="text" name="amount" value="10000">
+			  					@error('amount')
+						    	<div class="text-danger">{{$message}}</div>
+						    	@enderror
 				               
 			  				</div>
 
 			  				
-			  				{{-- <div class="row">
-			  					<div class="col-md-6">
-			  						<div class="form-group">
-			  							<label for="address">Address</label>
-			  							<input type="text" class="form-control" id="address" name="address">
-			  						</div>
-			  					</div>
-
-			  					<div class="col-md-3">
-			  						<div class="form-group">
-			  							<label for="city">City</label>
-			  							<input type="text" class="form-control" id="city" name="city">
-			  						</div>
-			  					</div>
-
-			  					<div class="col-md-3">
-			  						<div class="form-group">
-			  							<label for="province">Province</label>
-			  							<input type="text" class="form-control" id="province" name="province">
-			  						</div>
-			  					</div>
-			  				</div> --}}
-
-			  				{{-- <div class="row">
-			  					<div class="col-md-4">
-			  						<div class="form-group">
-			  							<label for="postalcode"> Postal Code</label>
-			  							<input type="text" class="form-control" id="postalcode" name="postalcode">
-			  						</div>
-			  					</div>
-			  					<div class="col-md-4">
-			  						<div class="form-group">
-			  							<label for="country">Country</label>
-			  							<input type="text" class="form-control" id="country" name="country">
-			  						</div>
-			  					</div>
-			  					<div class="col-md-4">
-			  						<div class="form-group">
-			  							<label for="postalcode">Phone</label>
-			  							<input type="text" class="form-control" id="phone" name="phone">
-			  						</div>
-			  					</div>
-			  				</div> --}}
-
-			  				{{-- <div class="row">
-			  					<div class="col-md-6">
-			  						<div class="form-group">
-			  							<label for="cc_number">Credit Card Number</label>
-			  							<input type="text" class="form-control" id="cc_number" name="cc_number">
-			  						</div>
-			  					</div>
-			  					<div class="col-md-3">
-			  						<div class="form-group">
-			  							<label for="expiry">Expiry</label>
-			  							<input type="text" class="form-control" id="expiry" name="expiry">
-			  						</div>
-			  					</div>
-			  					<div class="col-md-3">
-			  						<div class="form-group">
-			  							<label for="cvc">CVC</label>
-			  							<input type="text" class="form-control" id="cvc" name="cvc">
-			  						</div>
-			  					</div>
-			  				</div> --}}
-
-			  				{{-- <div class="form-group">
-			  					<label for="cc_number">Credit Card Number</label>
-
-			  					<div id="card-element"></div>
-
-			  					<div id="card-errors" role="alert"></div>
-			  				</div>
-
-			  				<div class="spacer"></div> --}}
-
 			  				<div class="row justify-content-center">
 			  					<div class="col-md-6 my-5">
-			  						<button type="submit" class="btn btn-success form-control" style="background-color: #bd8cbf;color: black">Pay Now</button>
+			  						<a href="" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Pay Now</a>
 			  					</div>
 			  				</div>
 

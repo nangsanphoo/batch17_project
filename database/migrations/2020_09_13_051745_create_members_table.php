@@ -15,18 +15,18 @@ class CreateMembersTable extends Migration
     {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
-            $table->string('codeno');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->integer('phoneno');
-            $table->text('photo');
+            $table->unsignedBigInteger('user_id');
             $table->string('gender');
+            $table->integer('phoneno');
             $table->integer('age');
-            $table->string('hair_style');
             $table->string('hobbies');
-            $table->string('address');
-            $table->text('description');
-            
+            $table->tinyInteger('status')->deafult(0);
+
+            $table->foreign('user_id')
+                  ->references('id')
+                  ->on('users')
+                  ->onDelete('cascade');
+
             $table->timestamps();
         });
     }

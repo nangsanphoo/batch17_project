@@ -64,13 +64,34 @@
       </li> --}}
 
       <!-- Nav Item - Utilities Collapse Menu -->
+      {{-- <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          
+          <span>User Lists</span>
+        </a>
+        
+      </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{route('members.index')}}">
+        <a class="nav-link collapsed" href="">
           
           <span>Member Lists</span>
         </a>
         
+      </li> --}}
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{route('memberreqlistpage')}}">
+          
+          <span>Member Request Lists</span>
+        </a>
+        
       </li>
+      {{-- <li class="nav-item">
+        <a class="nav-link collapsed" href="">
+          
+          <span>Match Lists</span>
+        </a>
+        
+      </li> --}}
 
       <!-- Divider -->
 

@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Member;
-
+use App\User;
+use Auth;
+use App\Match;
+use Illuminate\Support\Facades\DB;
 class FrontendController extends Controller
 {
     public function registerfun($value='')
@@ -55,19 +58,35 @@ class FrontendController extends Controller
 		//dd($request);
 		//dd($gender);
 		$gender = request('gender');
-		$age=request('age');
+		$age= request('age');
+		$hobbies=request('hobbies');
 		//dd($age);
-		$filters = Member::where('gender','!=',$gender)->where('age' ,$age)->get();
+		$filters = Member::where('gender',$gender)->where('age',$age)->where('hobbies',$hobbies)->get();
 		//dd($filters);
 		$members=Member::all();
+		//dd($members);
 		return view('frontend.profile',compact('filters','members'));
 
 	}
-	public function paymentfun(Request $request)
+	public function paymentfun($value='')
 	{ 	
 		//dd($request)->all();
 		return view('frontend.payment');
 
+	}
+
+	public function matchjoinfun($id){
+		//dd($id);
+		$user_id=Auth::id();
+		$match=new Match;
+		$match->user_id=$user_id;
+		$match->member_id=$id;
+		$match->status=1;
+		$match->save();
+
+		$matches=Match::where('user_id',$user_id)->get();
+		return view('frontend.match',compact('matches'));
+		//dd($user_id);
 	}
 }
 

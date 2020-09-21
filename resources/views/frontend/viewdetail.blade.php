@@ -14,11 +14,11 @@
 
            <table class="table" border="0" >
             <tr>
-              <td rowspan="7">
-                <img src="{{asset($members->photo)}}" style="width: 300px; height: 400px" class="img-fluid">
+              <td rowspan="6">
+                <img src="{{asset($members->user->photo)}}" style="width: 300px; height: 400px" class="img-fluid">
               </td>
 
-              <td>Name :   {{$members->name}} 
+              <td>Name :   {{$members->user->name}} 
               </td>
             </tr>
 
@@ -35,11 +35,7 @@
          </tr>
 
 
-         <tr>
-          <td>
-           Description :  {{$members->description}} 
-         </td>
-       </tr>
+         
 
      </table>
 
@@ -49,7 +45,7 @@
 
  <div class="text-left">
    <a href="{{route('partnerpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px;" >Back</a>
-   <a href="{{route('paymentpage')}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right" >Join</a>
+   <a href="{{route('matchjoin',$members->id)}}" class="btn btn-secondary my-3" style="background-color: #bd8cbf ; padding:10px 40px; float: right">Join</a>
  </div>
 </div>
 </div>

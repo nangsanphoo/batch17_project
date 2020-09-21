@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\User;
+use Auth;
 use App\Member;
 use Illuminate\Http\Request;
 
@@ -26,7 +27,8 @@ class MemberController extends Controller
         // dd($gender);
         $members=Member::all();
         //dd($items);
-        return view('backend.members.index',compact('members'));
+        // $memberlists=Member::where('status',0)->get();
+        return view('backend.members.memberreqlist',compact('members'));
     }
 
     /**
@@ -36,7 +38,7 @@ class MemberController extends Controller
      */
     public function create()
     {
-        return view('backend.members.create');
+        return view('frontend.members.create');
     }
 
     /**
@@ -48,43 +50,27 @@ class MemberController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            "codeno"=>'required | min:4',
-            "name"=>'required',
-            "email"=> 'required',
-            "phoneno"=>'required',
-            "photo"=>'required | mimes:jpg,png,jpeg',
             "gender"=>'required',
+            "phoneno"=>'required',
             "age"=>'required',
-            "hair_style"=>'required',
             "hobbies"=>'required',
-            "address"=>'required',
-            "description"=>'required'
             
         ]);
 
         //If include file, upload file
-        $imageName=time().'.'.$request->photo->extension();
-
-        $request->photo->move(public_path('back/memberimg'),$imageName);
-
-        $path='back/memberimg/'.$imageName;
         //Data insert
         $member=new Member;
-        $member->codeno=$request->codeno;
-        $member->name=$request->name;
-        $member->email=$request->email;
-        $member->phoneno=$request->phoneno;
-        $member->photo=$path;
+        $member->user_id=Auth::id();
         $member->gender=$request->gender;
+        $member->phoneno=$request->phoneno;
         $member->age=$request->age;
-        $member->hair_style=$request->hair_style;
         $member->hobbies=$request->hobbies;
-        $member->address=$request->address;
-        $member->description=$request->description;
+        $member->status=1;
         $member->save();
 
         //redirect
-        return redirect()->route('members.index');
+        $member=Member::where('status',0)->get();
+        return view('frontend.partner',compact('member'));
     }
 
     /**
@@ -115,13 +101,13 @@ class MemberController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Member  $member
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate
+                              </td> \Http\Response
      */
     public function update(Request $request, Member $member)
     {
         //validation
         $request->validate([
-            "codeno"=>'required | min:4',
             "name"=>'required',
             "email"=> 'required',
             "phoneno"=>'required',
@@ -149,7 +135,6 @@ class MemberController extends Controller
 
         //data update
         
-        $member->codeno=$request->codeno;
         $member->name=$request->name;
         $member->email=$request->email;
         $member->phoneno=$request->phoneno;

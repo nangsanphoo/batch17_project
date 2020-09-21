@@ -24,22 +24,22 @@
 
             <div class="col-md-12">
               <div class="row">
-                <h4><strong>Get in touch with us</strong></h4>               
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                <h4><strong>May Lover Finally Get Married</strong></h4>               
+                {{-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> --}}
               </div>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6 my-5">
               <div class="row">
                 <div class="dbox w-100 d-flex">
 
                   <div class="text">
-                    <p><span>Address:</span> Kyaing Tong, Shan State</p>
+                    <p><span>Address: </span>CUPID'S Heart Company, Kyaing Tong, Shan State</p>
                   </div>
                 </div>
 
@@ -47,7 +47,13 @@
                 <div class="dbox w-100 d-flex">
 
                   <div class="text">
-                    <p><span>Phone:</span>+95-9441-1182-1-3</a></p>
+                    <p><span>Phone: </span>+95-9441118213 , +95-9445623264</p>
+                  </div>
+                </div>
+                <div class="dbox w-100 d-flex">
+
+                  <div class="text">
+                    <p><span>Open:</span>9:00 am To 6:00 pm</a></p>
                   </div>
                 </div>
               </div>

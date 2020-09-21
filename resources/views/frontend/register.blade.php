@@ -55,8 +55,6 @@
                           </div>
                       </div>
                   </div>
-                
-
 
 
               <div class="form-row">
@@ -76,7 +74,7 @@
 
                   <div class="form-group" style="font-size:25px">
                     <label class="small mb-1" for="Date"> Birthday*</label>
-                    <input class="form-control py-4" id="date" type="Date" placeholder="Enter Month" name="Date" />
+                    <input class="form-control py-4" id="date" type="Date" placeholder="Enter Month" name="DOB" />
 
                   </div>
                 </div>
@@ -98,7 +96,7 @@
               <div class="col-md-10">
                 <div class="form-group" style="font-size:25px">
                   <label for="photo" class="">Profile*</label>
-                  <input type="file" class="form-control-file" id="profile" value="Choose File" name="photo">
+                  <input type="file" class="form-control-file" id="photo" value="Choose File" name="photo">
                 </div>
               </div>
             </div>

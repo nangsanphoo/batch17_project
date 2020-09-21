@@ -27,7 +27,7 @@ Route::get('viewdetail/{id}', 'FrontendController@viewdetailfun')->name('viewdet
 
 
 
-Route::get('payment','FrontendController@paymentfun')->name('paymentpage');
+
 Route::resource('matches', 'MatchController');
 Route::get('matchjoin/{id}','FrontendController@matchjoinfun')->name('matchjoin');
 Route::get('/contact', 'FrontendController@contactfun')->name('contactpage');

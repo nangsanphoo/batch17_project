@@ -18,6 +18,7 @@
                     <div class="MultiCarousel-inner">
                       @foreach($filters as $member)
                          <a href="{{route('viewdetailpage',$member->id)}}"> 
+<<<<<<< HEAD
                           <table border="0">
                             <tr>
                               <td style="padding: 10px">
@@ -29,6 +30,12 @@
                               <td style="padding-left: 50px">
                                 <a href="{{route('viewdetailpage',$member->id)}} " class="btn btn-secondary my-2" style="background-color: #bd8cbf ; padding:10px 40px; " >View</a>
                               </td>
+=======
+                          <div class="pad15">
+                            <img src="{{asset($member->photo)}}" class="img-fluid">
+                            
+                            <p class="text-truncate">{{$member->name}}</p>
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
                            
                             </tr>
 

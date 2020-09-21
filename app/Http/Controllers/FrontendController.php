@@ -31,7 +31,11 @@ class FrontendController extends Controller
 	public function partnerfun($value='')
 	{ 	
 		return view('frontend.partner');
-
+		// $this->validate($request, [
+		// 	'Gender' => 'required',
+		// 	'Age' => 'require',
+		// 	'Hobby'=> 'require',
+		// ]);
 	}
 
 	public function viewdetailfun($id)

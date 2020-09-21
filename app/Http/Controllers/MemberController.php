@@ -16,6 +16,17 @@ class MemberController extends Controller
     public function index(Request $request)
 
     {   
+<<<<<<< HEAD
+        $gender = $request->input('gender');
+        $age = $request->input('age');
+
+        $query = Member::query();
+        if(!empty($gender)){
+            $query->where('gender',$gender);
+
+        }
+        //dd($gender);
+=======
         // $gender = $request->input('gender');
         // $age = $request->input('age');
 
@@ -25,6 +36,7 @@ class MemberController extends Controller
         //     $query->where('age',$age);
         // }
         // dd($gender);
+>>>>>>> ea1e4329bfb94a9fb138e65dae4ca5962fa7d8bf
         $members=Member::all();
         //dd($items);
         // $memberlists=Member::where('status',0)->get();

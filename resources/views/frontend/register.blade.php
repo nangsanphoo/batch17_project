@@ -18,7 +18,7 @@
                                 <div class="col-md-10">
                                     <div class="form-group" style="font-size:25px">
                                       <label class="small mb-1" for="inputName"> Username*</label>
-                                      <input class="form-control py-4" id="inputName" type="text" name="name" />
+                                      <input class="form-control py-4" id="inputName" placeholder="Enter name" type="text" name="name" />
                                   </div>
                               </div>
                           </div>
@@ -63,7 +63,7 @@
 
                   <div class="form-group" style="font-size:25px">
                     <label class="small mb-1" for="address"> Address* </label>
-                    <textarea class="form-control" name="address"></textarea>
+                    <textarea class="form-control" name="address" placeholder="Enter address"></textarea>
                   </div>
                 </div>
               </div>
@@ -73,29 +73,28 @@
                 <div class="col-md-10">
 
                   <div class="form-group" style="font-size:25px">
+<<<<<<< HEAD
                     <label class="small mb-1" for="Date"> Birthday*</label>
                     <input class="form-control py-4" id="date" type="Date" placeholder="Enter Month" name="DOB" />
+=======
+                    <label class="small mb-1" for="birthday"> Birthday*</label>
+                    <input class="form-control py-4" id="birthday" type="Date" placeholder="Enter Month" name="birthday" />
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
 
                   </div>
                 </div>
               </div>
-              {{-- <div class="form-group" style="font-size:25px">
-                <label class="small mb-1" for="gender"> I'm a*</label>
-                <select class="form-control " id="gender" name="gender" placeholder="Select Gender">
-                  <option value="gender" >Select Gender</option>
-
-                  <option value="Male">Male</option>
-                  <option value="female">Female</option>
-
-                </select>
-              </div>
-            </div> --}}
+              
 
             <div class="form-row">
 
               <div class="col-md-10">
                 <div class="form-group" style="font-size:25px">
+<<<<<<< HEAD
                   <label for="photo" class="">Profile*</label>
+=======
+                  <label for="photo" class="">Photo*</label>
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
                   <input type="file" class="form-control-file" id="photo" value="Choose File" name="photo">
                 </div>
               </div>

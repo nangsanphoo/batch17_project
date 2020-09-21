@@ -371,7 +371,11 @@ header button:hover a {
 /* contact */
 
 .contact {
+<<<<<<< HEAD
     background-image: url('../imgs/rose.jpg');
+=======
+    background-image: url('../imgs/w6.jpg');
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
     background-size: cover;
 }
 

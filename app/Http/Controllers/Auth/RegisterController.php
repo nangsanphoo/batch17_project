@@ -52,11 +52,20 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+<<<<<<< HEAD
             'password' => ['required', 'string', 'min:5', 'confirmed'],
             'address'=>['required','string','max:255'],
             'DOB'=>['required','date'],
             'photo'=>['required']
+=======
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            /*'address' => ['required'],
+            'birthday' => ['required'],
+            'photo' => ['required'],*/
+
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
         ]);
+        //dd($data);
     }
 
     /**
@@ -76,9 +85,17 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'address' => $data['address'],
+<<<<<<< HEAD
             'photo' =>$path,
             'DOB' =>$data['DOB']
+=======
+            /*'birthday'=>$data['birthday'],
+            'photo' => $data['photo'],*/
+
+            
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
         ]);
+        //dd($data);
 
         $user->assignRole('User');
 

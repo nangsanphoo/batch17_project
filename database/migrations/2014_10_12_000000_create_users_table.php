@@ -19,14 +19,22 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             
             $table->string('password');
+<<<<<<< HEAD
             $table->string('address');
             $table->date('DOB');
             $table->text('photo');
+=======
+            /*$table->text('address');
+            $table->string('birthday');
+
+            $table->text('photo');*/
+>>>>>>> 255d676a78e059e6fdc5116729a5b2f79c5cd62b
             $table->rememberToken();
             
 
             $table->timestamps();
         });
+        
     }
 
     /**
